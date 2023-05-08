@@ -1,0 +1,49 @@
+{
+  "name": "vue3-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "electron-packager": "electron-packager . vue3-demo --platform=win32 --arch=x64 --icon=src/assets/icon.ico --overwrite",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.10",
+    "@types/protobufjs": "^6.0.0",
+    "axios": "^1.3.4",
+    "core-js": "^3.8.3",
+    "cors": "^2.8.5",
+    "element-plus": "^2.2.29",
+    "protobufjs": "^7.2.3",
+    "tinycolor2": "^1.6.0",
+    "v-drag": "^3.0.9",
+    "vue": "^3.2.47",
+    "vue-router": "^4.0.3",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^4.0.0",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/electron-devtools-installer": "^2.2.0",
+    "@types/tinycolor2": "^1.4.3",
+    "@types/vue": "^2.0.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "electron": "^23.2.0",
+    "electron-devtools-installer": "^3.1.0",
+    "electron-packager": "^17.1.1",
+    "less": "^4.0.0",
+    "less-loader": "^8.0.0",
+    "typescript": "~4.5.5",
+    "vue-cli-plugin-electron-builder": "^1.4.6"
+  }
+}
